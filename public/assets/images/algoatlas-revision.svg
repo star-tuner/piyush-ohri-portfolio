@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <rect width="1280" height="800" fill="#070B14"/>
+  <rect x="32" y="32" width="1216" height="736" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <text x="72" y="88" fill="#38BDF8" font-family="monospace" font-size="13" font-weight="700">ALGOATLAS · SPACED-REPETITION &amp; PATTERN DEPENDENCY DAG</text>
+  <text x="72" y="126" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="28" font-weight="700">Algorithmic Knowledge Graph &amp; Decay-Aware Revision Scheduler</text>
+  <!-- Graph Nodes -->
+  <line x1="260" y1="260" x2="520" y2="220" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <line x1="260" y1="260" x2="520" y2="380" stroke="#818CF8" stroke-width="2.5"/>
+  <line x1="520" y1="220" x2="860" y2="260" stroke="#34D399" stroke-width="2.5"/>
+  <line x1="520" y1="380" x2="860" y2="260" stroke="#C084FC" stroke-width="2.5"/>
+  <line x1="520" y1="380" x2="860" y2="440" stroke="#38BDF8" stroke-width="2.5"/>
+
+  <rect x="110" y="215" width="240" height="90" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <text x="135" y="252" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Two Pointers &amp; Sliding</text>
+  <text x="135" y="278" fill="#34D399" font-family="monospace" font-size="12">Mastery: 96% · Next: +14d</text>
+
+  <rect x="440" y="175" width="260" height="90" rx="14" fill="#1E293B" stroke="#34D399" stroke-width="2"/>
+  <text x="465" y="212" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Monotonic Deque / Stack</text>
+  <text x="465" y="238" fill="#34D399" font-family="monospace" font-size="12">Mastery: 93% · Next: +10d</text>
+
+  <rect x="440" y="335" width="260" height="90" rx="14" fill="#1E293B" stroke="#818CF8" stroke-width="2"/>
+  <text x="465" y="372" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Binary Search on Answer</text>
+  <text x="465" y="398" fill="#38BDF8" font-family="monospace" font-size="12">Mastery: 89% · Next: +7d</text>
+
+  <rect x="780" y="215" width="320" height="95" rx="14" fill="#1E293B" stroke="#C084FC" stroke-width="2"/>
+  <text x="805" y="252" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">DP + Convex Hull / Monotonic Opt</text>
+  <text x="805" y="278" fill="#FBBF24" font-family="monospace" font-size="12">Due for Review · Confidence 78%</text>
+
+  <rect x="780" y="395" width="320" height="95" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <text x="805" y="432" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Segment Tree &amp; Lazy Propagation</text>
+  <text x="805" y="458" fill="#38BDF8" font-family="monospace" font-size="12">Mastery: 85% · Next: +5d</text>
+
+  <!-- Telemetry Footer Cards -->
+  <rect x="72" y="540" width="350" height="170" rx="14" fill="#090D16" stroke="#1E293B"/>
+  <text x="96" y="578" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="700">SM-2+ DECAY SCHEDULER</text>
+  <text x="96" y="618" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="32" font-weight="700">94.6%</text>
+  <text x="96" y="648" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">30-Day Pattern Recall Rate across</text>
+  <text x="96" y="668" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">250+ curated algorithmic problems</text>
+
+  <rect x="456" y="540" width="350" height="170" rx="14" fill="#090D16" stroke="#1E293B"/>
+  <text x="480" y="578" fill="#C084FC" font-family="monospace" font-size="12" font-weight="700">SOCRATIC AI HINT ESCALATION</text>
+  <text x="480" y="618" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="32" font-weight="700">4-Stage</text>
+  <text x="480" y="648" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">1. Invariant Question → 2. Complexity Target</text>
+  <text x="480" y="668" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">3. Edge-Case Probe → 4. Optimal Walkthrough</text>
+
+  <rect x="840" y="540" width="360" height="170" rx="14" fill="#090D16" stroke="#1E293B"/>
+  <text x="864" y="578" fill="#34D399" font-family="monospace" font-size="12" font-weight="700">CLOUDFRONT EDGE DELIVERY</text>
+  <text x="864" y="618" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="32" font-weight="700">&lt;45ms</text>
+  <text x="864" y="648" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Global asset &amp; problem search response</text>
+  <text x="864" y="668" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">via d2e3pam5pm0s7f.cloudfront.net</text>
+</svg>

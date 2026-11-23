@@ -1,0 +1,30 @@
+{
+  "name": "piyush-ohri-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Piyush Ohri — Senior Full-Stack & Applied AI Engineer (Ex-Amazon, Ex-PharmEasy) | Scalable Microservices, Multi-Agent Systems, Hybrid RAG & NNER Research",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "Piyush Ohri",
+    "Full-Stack Engineer",
+    "Applied AI Engineer",
+    "Ex-Amazon",
+    "Ex-PharmEasy",
+    "Scalable Microservices",
+    "RAG Pipelines",
+    "Self-Improving Agents",
+    "NNER",
+    "Portico",
+    "Voca AI",
+    "Auri",
+    "AlgoAtlas"
+  ],
+  "author": "Piyush Ohri <ohri.piyush0190@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
