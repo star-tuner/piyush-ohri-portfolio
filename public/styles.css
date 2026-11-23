@@ -679,11 +679,24 @@ body {
   object-fit: contain;
   display: block;
   cursor: zoom-in;
-  transition: opacity 0.25s ease, transform 0.35s ease;
+  transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
-.gallery-main-img:hover {
-  transform: scale(1.015);
+.gallery-main-img.slide-in {
+  animation: smoothFadeScale 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes smoothFadeScale {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.975);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
 }
 
 .gallery-caption-bar {

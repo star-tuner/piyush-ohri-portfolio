@@ -49,6 +49,8 @@ const galleryState = {
   algoatlas: 0
 };
 
+const autoTourTimers = {};
+
 function updateGallery(projectKey, newIndex) {
   const items = PROJECT_GALLERIES[projectKey];
   if (!items || !items.length) return;
@@ -64,12 +66,11 @@ function updateGallery(projectKey, newIndex) {
   const thumbs = container.querySelectorAll('.gallery-thumb');
 
   if (mainImg) {
-    mainImg.style.opacity = '0.35';
-    setTimeout(() => {
-      mainImg.src = items[idx].src;
-      mainImg.alt = items[idx].caption;
-      mainImg.style.opacity = '1';
-    }, 110);
+    mainImg.classList.remove('slide-in');
+    void mainImg.offsetWidth; // trigger reflow
+    mainImg.src = items[idx].src;
+    mainImg.alt = items[idx].caption;
+    mainImg.classList.add('slide-in');
   }
   if (captionEl) captionEl.textContent = items[idx].caption;
   if (counterEl) counterEl.textContent = `${idx + 1} / ${items.length}`;
@@ -77,6 +78,19 @@ function updateGallery(projectKey, newIndex) {
   thumbs.forEach((t, i) => {
     t.classList.toggle('active', i === idx);
   });
+}
+
+function toggleAutoTour(projectKey, btn) {
+  if (autoTourTimers[projectKey]) {
+    clearInterval(autoTourTimers[projectKey]);
+    delete autoTourTimers[projectKey];
+    if (btn) btn.innerHTML = '▶ Auto Tour';
+  } else {
+    if (btn) btn.innerHTML = '⏸ Pause Tour';
+    autoTourTimers[projectKey] = setInterval(() => {
+      updateGallery(projectKey, galleryState[projectKey] + 1);
+    }, 3200);
+  }
 }
 
 function initGalleries() {
@@ -149,6 +163,14 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
   }
+
+  // Auto Tour Buttons
+  document.querySelectorAll('.gallery-auto-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const gKey = btn.dataset.gallery;
+      toggleAutoTour(gKey, btn);
+    });
+  });
 
   // Project Category Filtering
   const filterBtns = document.querySelectorAll('.filter-btn');

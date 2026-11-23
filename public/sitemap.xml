@@ -12,22 +12,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://piyush-ohri-portfolio.run.app/assets/docs/Portico_Architecture_Report.pdf</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://piyush-ohri-portfolio.run.app/assets/docs/Voca_AI_Architecture_Report.pdf</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://piyush-ohri-portfolio.run.app/assets/docs/Auri_Sage_Chat_Architecture_Report.pdf</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>

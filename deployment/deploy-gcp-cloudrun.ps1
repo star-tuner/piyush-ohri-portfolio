@@ -54,7 +54,8 @@ try {
         --cpu 1 `
         --min-instances 0 `
         --max-instances 5 `
-        --project $ProjectId
+        --project $ProjectId `
+        --quiet
 
     $ServiceUrl = (gcloud run services describe $ServiceName --region $Region --project $ProjectId --format="value(status.url)")
     Write-Host ""
