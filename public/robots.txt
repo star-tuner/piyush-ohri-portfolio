@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://piyush-ohri-portfolio.run.app/sitemap.xml
+Sitemap: https://piyush-ohri-portfolio-n4sthazexq-el.a.run.app/sitemap.xml
